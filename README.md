@@ -4,11 +4,20 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-## Screenshot
-![alt text](assets/images/final-page-1.png)
+## Table of Contents
+- [Description](#Description)
+- [Screenshots](#Screenshots)
+- [User Story](#User-Story)
+- [Acceptance Criteria](#Acceptance-Criteria)
+- [Demo Link](#Demo-Link)
 
 
 ## Description 
+This Node.js commnad-line application takes in information about employees on a software engineering team, then generates a HTML webpage that displays summaries for each person. The assignment also required to write a unit test for every part of the code and ensure that it passes each test. 
+
+
+## Screenshots
+![alt text](assets/images/final-page-1.png)
 
 
 ## User Story 
@@ -41,12 +50,5 @@ THEN I exit the application, and the HTML is generated
 ```
 
 
-## Technologies Used:
-- JavaScript 
-- Node.js
-- Jest
-- Inquirer package 
-
-
-## Demo-Link 
-[team-profile-generator-demo]()
+## Demo Link 
+[Team Profile Generator]()
