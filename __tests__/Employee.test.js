@@ -33,7 +33,7 @@ describe('Employee', () => {
             const id = 1;
             const employee = new Employee("", id);
     
-            expect (employee.name).toBe(id);
+            expect (employee.id).toBe(id);
         });
 
         // test that it sets email property based on constructor argument
@@ -63,7 +63,7 @@ describe('Employee', () => {
     });
 
     // describe getId
-    describe('getID', () => {
+    describe('getId', () => {
         // test that it returns the id property when the getId() method is called
             // define an id for the test
             // call constructor with an empty string for the name arg and the test id
@@ -101,8 +101,6 @@ describe('Employee', () => {
             
             expect(employee.getRole()).toBe('Employee');
         });
-    });
-
-    
+    });   
 });
 
