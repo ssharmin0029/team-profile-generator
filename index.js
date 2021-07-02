@@ -9,7 +9,7 @@ const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
-const pageTemplate = require('./page-template');
+const { generateHTML } = require('./page-template');
 
 // Array to hold team members
 const team = [];
@@ -20,7 +20,7 @@ function init() {
     function createManager() {
         inquirer.prompt(managerQuestions).then(response => {
             let manager = new Manager(
-                response.nameOfEngineer,
+                response.nameOfManager,
                 response.idOfManager,
                 response.emailOfManager,
                 response.officeNumberOfManager
@@ -42,7 +42,7 @@ function init() {
                 addIntern();
             }
             else {
-                pageTemplate.renderHTML(team);
+                generateHTML(team);
             }
         });
     }
