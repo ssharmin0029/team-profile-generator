@@ -17,19 +17,17 @@ function getEmployeeInfo( employee ) {
 function mapEmployees( employees ) {
     return employees
         .map( employee => (
-            `<section class="card">
+            `<div class="card" style="wdith: 18rem;">
                 <div class="card-body">
-                    <h4 class="card-title">${ employee.getName() }</h4>
-                    <h5 class="card-title">${ employee.getRole() }</h5>
-                </div>
-                <div>
-                    <ul>
+                    <h5 class="card-title">${ employee.getName() }</h5>
+                    <h6 class="card-subtitle">${ employee.getRole() }</h6>
+                    <ul list-group list-group-flush>
                         <li class="list-group-item">Employee ID: ${ employee.getId() }</li>
                         <li class="list-group-item">Email: <a href="mailto:${ employee.getEmail() }" class="card-link">${ employee.getEmail() }</a></li>
                         <li class="list-group-item">${ getEmployeeInfo( employee ) }</li>
                     </ul> 
                 </div>
-            </section>`
+            </div>`
         ) )
         .join( "" );
 }
@@ -49,7 +47,7 @@ function renderHTML( team ) {
             <header>
                 <h1>Team Profile</h1>
             </header>
-            <main>
+            <main class="container">
                 ${ mapEmployees( team ) }
             </main>
         </body>
