@@ -18,6 +18,7 @@ This Node.js commnad-line application takes in information about employees on a 
 
 ## Screenshots
 ![alt text](assets/images/final-page-1.png)
+![alt text](assets/images/final-page-2.png)
 
 
 ## User Story 
@@ -51,4 +52,4 @@ THEN I exit the application, and the HTML is generated
 
 
 ## Demo Link 
-[Team Profile Generator]()
+[Team Profile Generator](https://drive.google.com/file/d/1WClinA1U5nxvHNp5bqpwJqncfFI8NZBW/view?usp=sharing)
